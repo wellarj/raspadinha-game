@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const y = (e.clientY || e.touches[0].clientY) - rect.top;
 
         ctx.beginPath();
-        ctx.arc(x, y, 50, 0, Math.PI * 2, false);
+        ctx.arc(x, y, 20, 0, Math.PI * 2, false);
         ctx.fill();
     }
 
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        if (count / total > 0.3) {
+        if (count / total > 0.5) {
             revealChallenge();
         }
     }
